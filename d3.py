@@ -78,5 +78,3 @@ def noDup(string) :
         i+=1
     return new_str
 #print(noDup("aabbbcccx"))   
-
-

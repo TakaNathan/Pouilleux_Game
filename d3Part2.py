@@ -140,7 +140,11 @@ def entrez_position_valide(n):
      # COMPLETEZ CETTE FONCTION EN CONFORMITE AVEC LA DESCRIPTION CI-DESSUS
      # AJOUTEZ VOTRE CODE ICI
      while entier<1 or entier>n :
-        entier = int(input(n_string))
+        try :
+            entier = int(input(n_string))
+        except ValueError :
+            continue
+          
      return entier
 
 def joue():
@@ -216,9 +220,10 @@ def joue():
         print("J'ai terminé toutes les cartes.") 
         print("Vous avez perdu! Moi, Robot, j'ai gagné.") 
      else :
-        print("J'ai terminé toutes les cartes.") 
+        print("Vous avez terminé toutes les cartes.") 
         print("Félicitations! Vous, Humain, vous avez gagné.")
         
 # programme principale
 joue()
+
 
