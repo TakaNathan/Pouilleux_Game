@@ -211,8 +211,7 @@ def joue():
             humain=elimine_paires(humain)
             player = 0
             attend_le_joueur()
-     affiche_cartes(donneur)
-     affiche_cartes(humain)
+            
      if len(donneur)== 0 :
         print("J'ai terminé toutes les cartes.") 
         print("Vous avez perdu! Moi, Robot, j'ai gagné.") 
